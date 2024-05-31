@@ -12,8 +12,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="tablette.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="./css/tablette.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css" />
 </head>
 
 
@@ -40,19 +40,29 @@
                 <div>
                     <form method="get" action="">
                         <div class="search-container">
-                        <label for="site-search"><i class="fa-solid fa-location-dot pin-background"></i></label>
-                        <input class="ville" type="search" id="site-search" name="g" value="Marseille, France">
-                        <button class="bouton-recherche" type="submit">Rechercher</button>
+                            <label for="site-search" class="icon-container"><i class="fa-solid fa-location-dot pin-background"></i></label>
+                            <input class="ville" type="search" id="site-search" name="g" value="Marseille, France">
+                            <button class="bouton-recherche" type="submit">Rechercher</button>
+                            <button class="bouton-recherche-mobile fa-solid fa-magnifying-glass" type="submit"></button>
                         </div>
                     </form>
                 </div>
 
                 <div class="Filtres">
                     <p>Filtres</p>
-                    <button class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                    <button class="bouton-filtre">Familial</button>
-                    <button class="bouton-filtre">Romantique</button>
-                    <button class="bouton-filtre">Nos pépites</button>
+                    <div>
+                        <button class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button class="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button>
+                    </div>
+                    <div>
+                        <button class="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button>
+                        <button class="bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                    </div>
+                </div>
+
+                <div class="info">
+                        <div><i class="fa-solid fa-info cercle"></i></div> 
+                        <div>Plus de 500 logements sont disponibles dans cette ville</p></div>
                 </div>
             </section>
 
@@ -249,7 +259,8 @@
                 <div class="activités-title">
                     <h2 class="">Activités à Marseille</h2>
                 </div>
-                <div class="activités-cards">
+                <div class="cartes">
+                    <div class="activités-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/paul-hermann.jpg" alt="vieux port">
@@ -260,8 +271,8 @@
                             </div>
                         </article>
                     </a>
-                </div>
-                <div class="activités-cards">
+                    </div>
+                    <div class="activités-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="vieux port">
@@ -272,8 +283,8 @@
                             </div>
                         </article>
                     </a>
-                </div>
-                <div class="activités-cards">
+                    </div>
+                    <div class="activités-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="vieux port">
@@ -284,18 +295,19 @@
                             </div>
                         </article>
                     </a>
-                </div>
-                <div class="activités-cards">
+                    </div>
+                    <div class="activités-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/florian-wehde.jpg" alt="vieux port">
                             <div class="card-content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Vieux-Port</h3>
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                                 </div>
                             </div>
                         </article>
                     </a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -319,8 +331,8 @@
             <div class="footer-column">
                 <h3>Assistance</h3>
                 <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
         </footer>
