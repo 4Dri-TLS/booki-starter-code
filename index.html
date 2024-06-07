@@ -12,8 +12,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="./css/tablette.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="./css/tablette.css" />
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/mobile.css" />
 </head>
 
 
@@ -25,8 +25,8 @@
                 <div class="menu-container">
                         <a href="index.html"><img class="logo" src="./images/logo/Booki@3x.png" alt="Logo-Booki"></a>
                     <div class="links">
-                        <a href="#link1" class="nav-link" id="link1">Hébergements</a>
-                        <a href="#link2" class="nav-link"id="link2">Activités</a>
+                        <a href="#hebergements" class="nav-link" id="link1">Hébergements</a>
+                        <a href="#activites" class="nav-link"id="link2">Activités</a>
                     </div>
                 </div>
             </nav>
@@ -34,8 +34,8 @@
         <main>
             <section class="info-group">
                 <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
+                    <h1 class="titre-principal">Trouvez votre hébergement <span class="mobile-br"><br></span>pour des vacances de rêve</h1>
+                    <p class="sous-titre">En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div>
                     <form method="get" action="">
@@ -67,7 +67,7 @@
             </section>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                         <div class="hebergements-title">
                             <h2 class="section-title">Hébergements à Marseille</h2>
                         </div>
@@ -255,7 +255,7 @@
                     </div>
                 </section>
             </div>
-            <section class="activités">
+            <section class="activités" id= "activites">
                 <div class="activités-title">
                     <h2 class="">Activités à Marseille</h2>
                 </div>
