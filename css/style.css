@@ -58,17 +58,15 @@ section {
 .menu-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-right: 50px;
 }
 
 .links {
     display: flex;
     gap: 20px;
-    font-weight: thin;
-    position: fixed;
     top: 0;
-    margin-left: 1120px; /* trouver une alternative de position */
 }
+
 
 .links a:hover {
     color: #0065FC;
@@ -174,7 +172,7 @@ form{
 /****** Filtres ******/
 .Filtres{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -182,6 +180,10 @@ form{
 
 .Filtres p {
     font-size: 18px;
+}
+
+.Filtres div{
+    margin-bottom: 0px;
 }
 
 .bouton-filtre {
@@ -195,7 +197,8 @@ form{
     text-align: center;
     border-radius: 25px;
     cursor: pointer;
-    padding-right: 12px;
+    padding-right: 10px;
+    margin-right: 10px;
     border-style: solid;
 }
 
@@ -207,13 +210,21 @@ form{
 /****** i Info ******/
 .info {
     margin-top: 35px;
+    margin-bottom: 0px;
     width: 34%;
     display: flex;
     justify-content: space-between; 
 }
 
+.info div {
+    margin-bottom: 0px;
+}
+
 .info div:first-child{
     padding-right: 10px;
+}
+.info div:nth-child(2){
+    padding-top: 5px;
 }
 
 .cercle {
