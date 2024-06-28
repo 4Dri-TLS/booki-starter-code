@@ -23,10 +23,6 @@ h2 {
     font-size: 22px;
 }
 
-img {
-    max-width: 350px; /* a enlever une fois les cards intégrées */
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -37,7 +33,6 @@ body {
 .main-container {
     width: 98%;
     max-width: 767px; /* Lié au responsive */
-    /* box-sizing: border-box; */
     overflow-x: hidden;
 }
 
@@ -213,8 +208,6 @@ input[type="search"] {
     row-gap: 20px;
     column-gap: 10px;
     align-items: center;
-    /* padding-left: 20px;
-    padding-right: 20px; */
 }
 
 .Filtres p {
@@ -237,7 +230,6 @@ input[type="search"] {
     text-align: center;
     border-radius: 25px;
     cursor: pointer;
-    /* padding-right: 12px; */
     border-style: solid;
 }
 
@@ -254,7 +246,7 @@ input[type="search"] {
 .info {
     margin-top: 35px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start; 
 }
 
 .info div:first-child{
@@ -338,7 +330,7 @@ input[type="search"] {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    max-width: 750px; /* trouver une alternative a la width manuelle */
+    max-width: 750px;
     height: 220px;
     width: 100%;
     box-sizing: border-box;
@@ -388,7 +380,6 @@ margin-top: 15px;
 
 /****** Populaires ***********/
 .populaires {
-    /* width: 32%; */
     background-color: #F2F2F2;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -443,12 +434,6 @@ margin-top: 15px;
 }
 
 .cartes {
-    /* display: inline-flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 30px; */
     display: flex;
     flex-wrap: wrap; 
     flex-direction: column;
@@ -457,17 +442,9 @@ margin-top: 15px;
 
 
 .activités-cards .card {
-    /* background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 0px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-top: 15px;
-    width: 350px;
-    height: 439px; */
     display: flex;
     flex-direction: column;
-    max-width: 750px; /* trouver une alternative a la width manuelle */
+    max-width: 750px;
     height: 200px;
     width: 100%;
     box-sizing: border-box;
@@ -475,11 +452,6 @@ margin-top: 15px;
 
 
 .activités-cards .card img {
-    /* object-fit:none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    height: 380px; */
     max-width: 740px;
     height: 124px;
     border-top-left-radius: 20px;

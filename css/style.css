@@ -220,9 +220,7 @@ form{
 .info {
     margin-top: 35px;
     margin-bottom: 0px;
-    /* width: 34%; */
     display: flex;
-    /* justify-content: space-between;  */
 }
 
 .info div {
@@ -416,7 +414,6 @@ form{
     flex-wrap: nowrap;
     gap: 30px;
     width: 100%;
-    /* overflow-x: auto; */
 }
 
 .activités-cards {

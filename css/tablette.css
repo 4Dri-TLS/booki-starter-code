@@ -181,7 +181,6 @@ form{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* max-width: 100%; */
 }
 
 .Filtres div:first-child{
@@ -229,8 +228,8 @@ form{
     margin-top: 0px;
     width: 100%;
     display: flex;
-    /* justify-content: space-between;  */
 }
+
 .info-p {
 margin-top: 5px;
 }
@@ -270,7 +269,7 @@ margin-top: 5px;
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .euro {
@@ -432,7 +431,6 @@ margin-top: 5px;
     padding: 30px;
     padding-left: 0;
     padding-right: 0;
-    /* min-width: 700px; */
 }
 
 .cartes {
@@ -451,7 +449,6 @@ margin-top: 5px;
     padding: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-top: 30px;
-    /* width: 80%; */
     min-width: 150px;
     max-width: 210px;
     height: 270px;
